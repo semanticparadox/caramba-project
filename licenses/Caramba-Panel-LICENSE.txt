@@ -1,0 +1,46 @@
+Caramba Panel License 1.0 — Proprietary
+
+1. Scope and rights holder
+“Caramba” identifies the product. “Licensor” means the holder of the exclusive
+rights in original Caramba Panel material supplied under this license. All rights
+in that material are reserved except the permissions below. This license applies
+only to original panel material first distributed with these terms, to the extent
+controlled by the Licensor. It does not replace third-party licenses or valid
+earlier grants, or cover separately licensed Caramba Connect clients, VPN cores,
+sing-box, Mihomo, libraries, fonts or other third-party materials.
+
+2. Free edition
+The Licensor grants a non-exclusive, royalty-free right to install, run and make
+backup copies of official, unmodified Free binaries on servers you control.
+Each panel instance is limited to three VPN servers, two relays and 100 end users,
+without built-in end-user payment processing. Normal configuration, message
+editing and documented extension interfaces are permitted. This grant has no
+license purchase, subscription fee or royalty requirement.
+
+3. Full edition
+Full requires separate authorization from the Licensor specifying its features,
+limits and duration. Possessing an activation key alone grants no source-code or
+redistribution rights. Requests: https://t.me/caramba_support . This license does
+not start license sales, constitute an offer of paid services, or create a payment
+obligation. Any different terms require a separate agreement.
+
+4. Restrictions on covered original panel material
+Except for the permissions above, written authorization, mandatory law or an
+independent applicable license, you may not modify, create derivative works of,
+publish, redistribute, sublicense or resell the covered original code or binaries;
+remove rights notices; or bypass edition restrictions. No trademark rights are
+granted beyond truthful identification of the installed product. These limits do
+not reduce rights in separately licensed components or earlier copies, including
+GPL-authorized modification and redistribution of clients and VPN cores.
+
+5. Warranty and liability
+The software is provided “AS IS”, without warranties of merchantability, fitness
+for a particular purpose or non-infringement, to the extent permitted by law.
+To that extent the Licensor is not liable for indirect, incidental, special or
+consequential damages arising from use. Mandatory consumer rights and liabilities
+that cannot lawfully be excluded remain unaffected.
+
+6. Termination
+This grant ends on a material violation of its terms. Stop using and remove the
+covered material, except copies you have an independent right or legal duty to
+retain. Third-party licenses and valid earlier grants remain unaffected.
