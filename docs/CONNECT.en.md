@@ -43,14 +43,16 @@ depends on your provider's capabilities.
 
 ## How traffic is routed
 
-Desktop apps use a **local proxy** by default. The address is displayed in the
-app, usually `127.0.0.1:7890`. Configure your browser or other app to use that
-proxy when needed.
+Windows and Linux default to **system TUN**. A previously selected mode is
+retained. Windows requests administrator permission; on Linux, run the included
+`install.sh` — it requests the required permissions and configures TUN access.
+If permissions prevent TUN from starting, fix the installation or manually choose
+**Local proxy** under **Settings → Network and core → Traffic capture**.
 
-On Windows and Linux, **Settings → Network and core → Traffic capture → System
-TUN** is available with the required system permissions. The current macOS build
-uses a local proxy and does not support system TUN. A connected status on a Mac
-therefore does not mean that every app is using the VPN.
+On macOS, use the **local proxy**: system TUN is unsupported in the current
+build. The proxy address is displayed in the app, usually `127.0.0.1:7890`.
+In proxy mode, configure your browser or other app with that address. A connected
+status on a Mac does not mean all device traffic is routed through the VPN.
 
 Use traffic rules to choose an available routing mode and exceptions. Reconnect
 after a settings change if prompted.
