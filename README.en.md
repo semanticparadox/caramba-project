@@ -8,13 +8,9 @@ Caramba helps you run a VPN on your own servers and manage it from one panel.
 Your users connect with Caramba Connect, access their subscriptions and contact
 support from the app.
 
-**The previously published version is 0.9.97.** Version **0.9.98 is being prepared**;
-upcoming features are marked below. See the
-[preview notes](docs/releases/0.9.98.en.md) for the prepared changes.
-
-**0.9.98 is the unified release version** for the panel, installer, nodes, bot
-and all Caramba Connect apps. Builds are undergoing final validation; download
-links and installation from the new address become available after publication.
+**Caramba Project 0.9.98 is available** for the panel, installer, nodes, bot
+and Caramba Connect. Connect's internal build number is **112**.
+[Release notes](docs/releases/0.9.98.en.md).
 
 ## Start here
 
@@ -34,9 +30,9 @@ on the server and client.
 **Users.** Plans, subscriptions, access duration, devices and support tickets.
 A Telegram bot and Mini App help users get their connection link.
 
-**Coming in 0.9.98:** staff permissions, up to 730 days of traffic history,
+**New in 0.9.98:** staff permissions, up to 730 days of traffic history,
 single-use key batches with TXT/CSV export, and a message editor with images,
-GIFs and preview. [See what's changing →](docs/releases/0.9.98.en.md)
+GIFs and preview. [See what's new →](docs/releases/0.9.98.en.md)
 
 ## Free and Full
 
@@ -62,15 +58,13 @@ authorization are arranged individually; automated license sales are not open.
 
 ## Download Caramba Connect
 
-The links below become available after **0.9.98** is published. The new public
-repository does not have a binary release yet.
-Historical source archives in Releases document earlier versions; they are not
-a new app release.
+Release **0.9.98** files are available below. The historical source release
+covers earlier versions; it is not a new app release.
 
 The app is distributed separately. You need a subscription from your
 provider; downloading the app does not include VPN service.
 
-| Platform | Prepared release files |
+| Platform | Release 0.9.98 files |
 | :--- | :--- |
 | Windows · 64-bit | [EXE installer](https://github.com/semanticparadox/caramba-project/releases/latest/download/Caramba-Connect-Setup-x64.exe) · [Portable ZIP](https://github.com/semanticparadox/caramba-project/releases/latest/download/Caramba-Connect-Windows-x64-portable.zip) |
 | macOS · Apple Silicon | [DMG](https://github.com/semanticparadox/caramba-project/releases/latest/download/Caramba-Connect-macOS-arm64.dmg) |
@@ -79,18 +73,22 @@ provider; downloading the app does not include VPN service.
 | iPhone / iPad | No public Caramba Connect build yet. Ask your provider for a compatible client. |
 | Telegram | Open the Mini App in your provider's bot; no separate installation. |
 
-[Release page after publication](https://github.com/semanticparadox/caramba-project/releases/latest) ·
+[Release page](https://github.com/semanticparadox/caramba-project/releases/latest) ·
 [Installation and connection guide](docs/CONNECT.en.md)
 
 Caramba is in beta. Signing, requirements and platform limitations are documented
 in each release. On macOS, the current app uses a local proxy; it does not provide
 a system VPN tunnel for all apps.
 
+The macOS app uses an ad-hoc signature without a Developer ID certificate.
+The DMG is unsigned and has not been notarized by Apple; macOS may block normal
+opening of the downloaded file. This is an Apple Silicon beta build.
+
 ## Install the panel
 
 You need a Linux server with administrator access and a domain.
 The [installation guide](docs/INSTALL.en.md) takes you from server preparation
-to your first subscription **once server release 0.9.98 is published**.
+to your first subscription.
 For an existing service, read the
 [upgrade guide](docs/UPGRADING.en.md) first.
 

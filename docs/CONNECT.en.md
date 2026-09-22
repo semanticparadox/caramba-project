@@ -2,10 +2,9 @@
 
 [← Documentation](README.en.md) · [RU](CONNECT.md) | **ENG** · [Download the app](../README.en.md#download-caramba-connect)
 
-Caramba Connect connects you to your VPN provider. **Caramba Connect 0.9.98** is
-being prepared together with the other Caramba Project components of the same
-release. Its internal build number is **112**. Public downloads will be available
-after final validation and release publication.
+Caramba Connect connects you to your VPN provider. **Caramba Connect 0.9.98**
+is part of Caramba Project **0.9.98**. Its internal build number is **112**.
+Available platforms and files are listed below.
 
 ## Install the app
 
@@ -19,6 +18,10 @@ Check its notes for the appropriate build and limitations.
 | Android | Most devices use ARM64; ARMv7 is for older 32-bit devices. Open the APK and allow installation from your chosen download source. |
 | Linux 64-bit | Extract the archive and run the included `install.sh`, which sets up app integration and required permissions. |
 | iPhone / iPad | There is no public Caramba Connect build. Ask your provider for a compatible app and subscription link. |
+
+The macOS app uses an ad-hoc signature without a Developer ID certificate.
+The DMG is unsigned and has not been notarized by Apple; macOS may block normal
+opening of the downloaded file. This is an Apple Silicon beta build.
 
 The release notes describe signing and requirements. If your system reports a
 damaged or incompatible file, check the platform, download source and file

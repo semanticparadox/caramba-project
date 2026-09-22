@@ -5,11 +5,8 @@
 This guide is for service owners. If you only want to connect to a VPN, use the
 [Caramba Connect guide](CONNECT.en.md).
 
-**Installation becomes available when server release 0.9.98 is published.**
-Until a compatible release is published, the new installer stops before
-downloading components. Older 0.9.97 server files do not
-support a fresh installation from the new public address. Connect 0.9.98 apps
-are being prepared for publication in the same release.
+Installation from the public address requires release **0.9.98 or later**.
+Older 0.9.97 server files do not support this installation path.
 
 ## Prepare your server
 
@@ -24,8 +21,7 @@ your bot; do not publish it or include it in support requests.
 
 ## Run the installer
 
-Once **0.9.98 or newer** is published, connect to the server over SSH, download
-the official installer and run it:
+Connect to the server over SSH, download the official installer and run it:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/semanticparadox/caramba-project/main/install.sh -o /tmp/caramba-install.sh
@@ -56,7 +52,7 @@ does not mean a connection server is ready. Check both before inviting users.
 
 ## Choose an edition
 
-For the upcoming **0.9.98** release, Free allows up to 3 VPN servers, 2 separate
+In release **0.9.98**, Free allows up to 3 VPN servers, 2 separate
 relays and 100 users, without integrated payments. For Full or setup questions,
 contact [@caramba_support](https://t.me/caramba_support).
 [Terms of use](../LICENSE.md).

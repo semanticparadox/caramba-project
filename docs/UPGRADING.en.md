@@ -2,12 +2,10 @@
 
 [← Documentation](README.en.md) · [RU](UPGRADING.md) | **ENG**
 
-The previously published version is **0.9.97**. Version **0.9.98 is being prepared**. The
-upgrade command installs the published release, not the upcoming feature preview.
+Release **0.9.98** is available. The upgrade command installs the published release.
 
-**Server upgrades from the new address require 0.9.98 or newer.** Until that
-release is published, the installer stops before downloading components.
-The panel, installer, nodes, bot and Connect apps will share version **0.9.98**.
+**Server upgrades from the new address require 0.9.98 or newer.** The panel,
+installer, nodes, bot and Connect apps share version **0.9.98**.
 
 ## Before upgrading the panel
 
@@ -24,8 +22,7 @@ enough to roll back.
 
 ## Upgrade the panel
 
-Once **0.9.98 or newer** is published, download the current installer from
-**Caramba Project** on the panel server:
+On the panel server, download the current installer from **Caramba Project**:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/semanticparadox/caramba-project/main/install.sh -o /tmp/caramba-install.sh

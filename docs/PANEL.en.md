@@ -3,7 +3,7 @@
 [← Documentation](README.en.md) · [RU](PANEL.md) | **ENG** · [Install](INSTALL.en.md) · [Support](https://t.me/caramba_support)
 
 The panel brings together your servers, users, subscriptions and support.
-Features introduced in the **upcoming 0.9.98 release** are marked below. Their
+Features introduced in the **0.9.98 release** are marked below. Their
 menu entries may not be present in the previously published 0.9.97 release.
 
 ## Your first day
