@@ -54,7 +54,7 @@ In Free, waiting for key approval does not consume the granted days.
 
 **For Full, contact [@caramba_support](https://t.me/caramba_support).** Terms and
 authorization are arranged individually; automated license sales are not open.
-[Terms of use](LICENSE.md).
+[Activate Full](docs/LICENSING.en.md) · [Terms of use](LICENSE.md).
 
 ## Download Caramba Connect
 

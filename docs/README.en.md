@@ -7,6 +7,7 @@
 | Connect to a VPN | [Caramba Connect: installation, subscription and help](CONNECT.en.md) |
 | Set up your panel | [Installation and first run](INSTALL.en.md) |
 | Operate your service | [Complete panel guide](PANEL.en.md) |
+| Activate or renew Full | [License activation](LICENSING.en.md) |
 | Update the panel or app | [Upgrades and backups](UPGRADING.en.md) |
 | What's new | [Release 0.9.98](releases/0.9.98.en.md) |
 | Find terms of use | [Licenses](../LICENSE.md) |
