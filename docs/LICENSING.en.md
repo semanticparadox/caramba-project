@@ -1,6 +1,6 @@
 # Activate Caramba Full
 
-[RU](LICENSING.md) | **ENG**
+**English** | [Русский](LICENSING.ru.md)
 
 Free can be installed on your own server with no license fee. For Full, contact
 [@caramba_support](https://t.me/caramba_support), agree on the term and number
@@ -45,5 +45,5 @@ If the activation server is unavailable, a previously verified license remains
 valid for up to 14 days after its last successful check, but never beyond its
 expiry date. Free restrictions apply when validity ends; renew in advance.
 
-[Compare Free and Full](../README.en.md#free-and-full) ·
-[Terms of use](../LICENSE.md) · [Upgrade the panel](UPGRADING.en.md)
+[Compare Free and Full](../README.md#free-and-full) ·
+[Terms of use](../LICENSE.md) · [Upgrade the panel](UPGRADING.md)

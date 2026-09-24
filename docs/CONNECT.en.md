@@ -1,6 +1,6 @@
 # Caramba Connect: connect and troubleshoot
 
-[← Documentation](README.en.md) · [RU](CONNECT.md) | **ENG** · [Download the app](../README.en.md#download-caramba-connect)
+[← Documentation](README.md) · **English** | [Русский](CONNECT.ru.md) · [Download the app](../README.md#download-caramba-connect)
 
 Caramba Connect connects you to your VPN provider. **Caramba Connect 0.9.98**
 is part of Caramba Project **0.9.98**. Its internal build number is **112**.

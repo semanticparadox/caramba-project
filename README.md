@@ -1,106 +1,107 @@
-<p align="center"><img src="docs/brand/caramba-cover.png" alt="Корабль Caramba выходит в открытое море" width="100%"></p>
+<p align="center"><img src="docs/brand/caramba-cover.png" alt="The Caramba ship heading into open water" width="100%"></p>
 <h1 align="center">Caramba Project</h1>
-<p align="center"><strong>Свой маршрут. Свой сервис.</strong><br>Панель управления VPN и приложения Caramba Connect.</p>
-<p align="center"><strong>RU</strong> | <a href="README.en.md">ENG</a></p>
-<p align="center"><a href="#скачать-caramba-connect">Скачать</a> · <a href="#установить-панель">Установить</a> · <a href="docs/UPGRADING.md">Обновить</a> · <a href="docs/README.md">Документация</a> · <a href="https://t.me/caramba_support">Поддержка</a></p>
+<p align="center"><strong>Your course. Your service.</strong><br>VPN administration and Caramba Connect apps.</p>
+<p align="center"><strong>English</strong> | <a href="README.ru.md">Русский</a></p>
+<p align="center"><a href="#download-caramba-connect">Download</a> · <a href="#install-the-panel">Install</a> · <a href="docs/UPGRADING.md">Upgrade</a> · <a href="docs/README.md">Documentation</a> · <a href="https://t.me/caramba_support">Support</a></p>
 
-Caramba помогает запустить VPN на своих серверах и управлять им из одной панели.
-Пользователи подключаются через Caramba Connect, получают доступ к подписке
-и обращаются в поддержку прямо из приложения.
+Caramba helps you run a VPN on your own servers and manage it from one panel.
+Your users connect with Caramba Connect, access their subscriptions and contact
+support from the app.
 
-**Доступен Caramba Project 0.9.98:** панель, установщик, узлы, бот и Caramba Connect.
-Внутренний номер сборки Connect — **112**. [Примечания к выпуску](docs/releases/0.9.98.md).
+**Caramba Project 0.9.98 is available** for the panel, installer, nodes, bot
+and Caramba Connect. Connect's internal build number is **112**.
+[Release notes](docs/releases/0.9.98.md).
 
-## Выберите свой путь
+## Start here
 
-| Мне нужно… | С чего начать |
+| I want to… | Next step |
 | :--- | :--- |
-| Подключиться к своему провайдеру | [Скачать Caramba Connect](#скачать-caramba-connect) и [добавить подключение](docs/CONNECT.md). |
-| Запустить собственный сервис | [Установить панель](docs/INSTALL.md), добавить сервер и выдать первую подписку. |
-| Обновить действующую установку | [Порядок обновления и резервная копия](docs/UPGRADING.md). |
-| Разобраться с панелью | [Руководство владельца](docs/PANEL.md). |
+| Connect to my provider | [Download Caramba Connect](#download-caramba-connect) and [add a connection](docs/CONNECT.md). |
+| Run my own service | [Install the panel](docs/INSTALL.md), add a server and issue a subscription. |
+| Upgrade an existing installation | [Back up and upgrade](docs/UPGRADING.md). |
+| Learn the panel | [Read the owner's guide](docs/PANEL.md). |
 
-## Всё для вашего сервиса
+## Your service, in one place
 
-**Инфраструктура.** Серверы, релэи, состояние узлов и выбор доступных подключений.
-VLESS Reality, Hysteria2, TUIC, Shadowsocks и AmneziaWG — набор зависит от сервера
-и приложения.
+**Infrastructure.** Servers, relays, node health and connection choices.
+VLESS Reality, Hysteria2, TUIC, Shadowsocks and AmneziaWG are available depending
+on the server and client.
 
-**Пользователи.** Тарифы, подписки, сроки доступа, устройства и обращения поддержки.
-Telegram-бот и Mini App помогают пользователю получить ссылку подключения.
+**Users.** Plans, subscriptions, access duration, devices and support tickets.
+A Telegram bot and Mini App help users get their connection link.
 
-**В выпуске 0.9.98:** сотрудники с отдельными правами, история трафика до 730 дней,
-партии одноразовых ключей с TXT/CSV и редактор сообщений с изображениями,
-GIF и предпросмотром. [Что нового →](docs/releases/0.9.98.md)
+**New in 0.9.98:** staff permissions, up to 730 days of traffic history,
+single-use key batches with TXT/CSV export, and a message editor with images,
+GIFs and preview. [See what's new →](docs/releases/0.9.98.md)
 
-## Free и Full
+## Free and Full
 
-В выпуске **0.9.98** доступны две редакции панели:
+Version **0.9.98** introduces these panel editions:
 
 | | Free | Full |
 | :--- | :---: | :---: |
-| VPN-серверы | До 3 | По лицензии |
-| Релэи | До 2, отдельно от серверов | По лицензии |
-| Пользователи | До 100 | По лицензии |
-| Тикеты, сообщения, аналитика, сотрудники | Да | Да |
-| Встроенный приём платежей | Нет | Да |
-| Активация ключей и промоподписок | С одобрением администратора | Автоматически |
-| Брендинг оператора | Стандартный | Настраиваемый |
+| VPN servers | Up to 3 | Per license |
+| Relays | Up to 2, separate from servers | Per license |
+| Users | Up to 100 | Per license |
+| Tickets, messages, analytics, staff | Yes | Yes |
+| Integrated payments | No | Yes |
+| Key and promotional subscription activation | Admin approval | Automatic |
+| Operator branding | Standard | Customizable |
 
-Free — официальная сборка для самостоятельного размещения без платы за лицензию.
-Бесплатный доступ и приветственные подарки, заранее настроенные владельцем,
-могут выдаваться автоматически. Во Free ожидание одобрения ключа не расходует
-выданные дни.
+Free is the official self-hosted build with no license fee. Free access and
+welcome gifts configured in advance by the owner may be granted automatically.
+In Free, waiting for key approval does not consume the granted days.
 
-**Для Full напишите [@caramba_support](https://t.me/caramba_support).** Условия
-и разрешение согласуются отдельно; автоматическая продажа лицензий не открыта.
-[Как активировать Full](docs/LICENSING.md) · [Условия использования](LICENSE.md).
+**For Full, contact [@caramba_support](https://t.me/caramba_support).** Terms and
+authorization are arranged individually; automated license sales are not open.
+[Activate Full](docs/LICENSING.md) · [Terms of use](LICENSE.md).
 
-## Скачать Caramba Connect
+## Download Caramba Connect
 
-Файлы выпуска **0.9.98** доступны ниже. Архивный выпуск исходников относится
-к предыдущим версиям и не является новым выпуском приложений.
+Release **0.9.98** files are available below. The historical source release
+covers earlier versions; it is not a new app release.
 
-Приложение распространяется отдельно. Для подключения нужна подписка вашего
-провайдера: загрузка приложения сама по себе её не выдаёт.
+The app is distributed separately. You need a subscription from your
+provider; downloading the app does not include VPN service.
 
-| Платформа | Файлы выпуска 0.9.98 |
+| Platform | Release 0.9.98 files |
 | :--- | :--- |
-| Windows · 64-bit | [Установщик EXE](https://github.com/semanticparadox/caramba-project/releases/latest/download/Caramba-Connect-Setup-x64.exe) · [Portable ZIP](https://github.com/semanticparadox/caramba-project/releases/latest/download/Caramba-Connect-Windows-x64-portable.zip) |
+| Windows · 64-bit | [EXE installer](https://github.com/semanticparadox/caramba-project/releases/latest/download/Caramba-Connect-Setup-x64.exe) · [Portable ZIP](https://github.com/semanticparadox/caramba-project/releases/latest/download/Caramba-Connect-Windows-x64-portable.zip) |
 | macOS · Apple Silicon | [DMG](https://github.com/semanticparadox/caramba-project/releases/latest/download/Caramba-Connect-macOS-arm64.dmg) |
 | Android | [ARM64 APK](https://github.com/semanticparadox/caramba-project/releases/latest/download/Caramba-Connect-Android-arm64.apk) · [ARMv7 APK](https://github.com/semanticparadox/caramba-project/releases/latest/download/Caramba-Connect-Android-armv7.apk) |
-| Linux · 64-bit | [Архив TAR.GZ](https://github.com/semanticparadox/caramba-project/releases/latest/download/Caramba-Connect-Linux-x64.tar.gz) |
-| iPhone / iPad | Публичной сборки Caramba Connect пока нет. Запросите у провайдера совместимый клиент. |
-| Telegram | Откройте Mini App через бота своего провайдера; отдельная установка не нужна. |
+| Linux · 64-bit | [TAR.GZ archive](https://github.com/semanticparadox/caramba-project/releases/latest/download/Caramba-Connect-Linux-x64.tar.gz) |
+| iPhone / iPad | No public Caramba Connect build yet. Ask your provider for a compatible client. |
+| Telegram | Open the Mini App in your provider's bot; no separate installation. |
 
-[Страница выпуска](https://github.com/semanticparadox/caramba-project/releases/latest) ·
-[Как установить и подключиться](docs/CONNECT.md)
+[Release page](https://github.com/semanticparadox/caramba-project/releases/latest) ·
+[Installation and connection guide](docs/CONNECT.md)
 
-Проект в бета-тестировании. Подпись сборки, требования и ограничения платформы
-указаны в её выпуске. На macOS сейчас используется локальный прокси; это не
-системный VPN-туннель для всех приложений.
+Caramba is in beta. Signing, requirements and platform limitations are documented
+in each release. On macOS, the current app uses a local proxy; it does not provide
+a system VPN tunnel for all apps.
 
-Приложение macOS имеет техническую подпись ad hoc, без сертификата Developer ID.
-DMG не подписан и не нотарифицирован Apple; macOS может заблокировать обычное
-открытие загруженного файла. Это бета-сборка для Apple Silicon.
+The macOS app uses an ad-hoc signature without a Developer ID certificate.
+The DMG is unsigned and has not been notarized by Apple; macOS may block normal
+opening of the downloaded file. This is an Apple Silicon beta build.
 
-## Установить панель
+## Install the panel
 
-Нужен собственный Linux-сервер с доступом администратора и доменом.
-[Пошаговая установка](docs/INSTALL.md) проведёт от подготовки сервера до первой
-подписки. Для действующего сервиса
-сначала прочитайте [руководство по обновлению](docs/UPGRADING.md).
+You need a Linux server with administrator access and a domain.
+The [installation guide](docs/INSTALL.md) takes you from server preparation
+to your first subscription.
+For an existing service, read the
+[upgrade guide](docs/UPGRADING.md) first.
 
-## Помощь и документы
+## Help and documentation
 
-- [Руководство панели](docs/PANEL.md) — пользователи, серверы, ключи, сообщения и команда.
-- [Подключение и частые вопросы](docs/CONNECT.md) — помощь пользователю Caramba Connect.
-- [Вся документация](docs/README.md) — установка, обновление и условия использования.
-- [Лицензии](LICENSE.md) · [Сторонние компоненты](docs/legal/THIRD_PARTY.md) · [Соответствующие исходники](docs/legal/SOURCE_AVAILABILITY.md).
+- [Panel guide](docs/PANEL.md) — users, servers, keys, messages and your team.
+- [Connect and troubleshoot](docs/CONNECT.md) — help for Caramba Connect users.
+- [Documentation](docs/README.md) — installation, upgrades and terms.
+- [Licenses](LICENSE.md) · [Third-party components](docs/legal/THIRD_PARTY.md) · [Corresponding source](docs/legal/SOURCE_AVAILABILITY.md).
 
-Эта страница содержит документацию и ссылки на готовые выпуски. Соответствующие
-исходники компонентов, для которых они требуются лицензией, доступны **в файлах
-того же выпуска**, рядом со сборками.
+This repository provides documentation and links to ready-to-use releases.
+Corresponding source required by component licenses is supplied **as attachments
+to the same release**, alongside its binaries.
 
-Вопросы о проекте, установке и Full: **[@caramba_support](https://t.me/caramba_support)**.
-По подписке стороннего провайдера обращайтесь в его поддержку.
+For the project, installation or Full, contact **[@caramba_support](https://t.me/caramba_support)**.
+For a subscription from another provider, contact that provider's support.

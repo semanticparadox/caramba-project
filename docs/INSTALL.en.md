@@ -1,9 +1,9 @@
 # Install the panel
 
-[← Documentation](README.en.md) · [RU](INSTALL.md) | **ENG** · [Upgrade an existing panel](UPGRADING.en.md)
+[← Documentation](README.md) · **English** | [Русский](INSTALL.ru.md) · [Upgrade an existing panel](UPGRADING.md)
 
 This guide is for service owners. If you only want to connect to a VPN, use the
-[Caramba Connect guide](CONNECT.en.md).
+[Caramba Connect guide](CONNECT.md).
 
 Installation from the public address requires release **0.9.98 or later**.
 Older 0.9.97 server files do not support this installation path.
@@ -33,7 +33,7 @@ its prompts to choose the panel role, enter your domain and configure the admin
 account. Save the login address and password in your password manager.
 
 Back up existing data before installing on a server already in use. For an
-existing Caramba installation, follow the [upgrade guide](UPGRADING.en.md).
+existing Caramba installation, follow the [upgrade guide](UPGRADING.md).
 
 ## First run
 
@@ -57,4 +57,4 @@ relays and 100 users, without integrated payments. For Full or setup questions,
 contact [@caramba_support](https://t.me/caramba_support).
 [Terms of use](../LICENSE.md).
 
-Next: [panel guide](PANEL.en.md) · [backups and upgrades](UPGRADING.en.md).
+Next: [panel guide](PANEL.md) · [backups and upgrades](UPGRADING.md).

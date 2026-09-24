@@ -1,198 +1,192 @@
-# Панель Caramba: руководство владельца
+# Caramba panel: owner's guide
 
-[← Документация](README.md) · **RU** | [ENG](PANEL.en.md) · [Установка](INSTALL.md) · [Поддержка](https://t.me/caramba_support)
+[← Documentation](README.md) · **English** | [Русский](PANEL.ru.md) · [Install](INSTALL.md) · [Support](https://t.me/caramba_support)
 
-Панель объединяет серверы, пользователей, подписки и поддержку вашего сервиса.
-В этом руководстве новые возможности **выпуска 0.9.98** помечены
-отдельно. В ранее выпущенной версии 0.9.97 соответствующих пунктов меню может ещё не быть.
+The panel brings together your servers, users, subscriptions and support.
+Features introduced in the **0.9.98 release** are marked below. Their
+menu entries may not be present in the previously published 0.9.97 release.
 
-## Первый день с панелью
+## Your first day
 
-После [установки](INSTALL.md) войдите под владельцем. Добавьте VPN-сервер, дождитесь
-его подключения к панели, создайте тариф и выдайте подписку своему тестовому
-пользователю. Проверьте подключение в приложении до приглашения клиентов.
+After [installation](INSTALL.md), sign in as the owner. Add a VPN server, wait
+for it to connect to the panel, create a plan and issue a subscription to your
+own test user. Test the app connection before inviting customers.
 
-Сохраните адрес входа и пароль. В 0.9.98 для команды можно создать отдельные
-учётные записи: общий пароль владельца сотрудникам не понадобится.
+Keep your login address and password safe. In 0.9.98, separate staff accounts
+let your team work without sharing the owner's password.
 
-## Серверы и релэи
+## Servers and relays
 
-VPN-сервер обеспечивает выход в интернет. Релей даёт дополнительную точку входа
-и передаёт соединение к выходному серверу. Если такая схема вам не нужна,
-начните с обычного сервера без релея.
+A VPN server provides the internet exit. A relay adds an entry point and forwards
+the connection to an exit server. Start with a regular server if you do not need
+a relay arrangement.
 
-В разделе серверов добавьте узел и выполните выданную команду регистрации на своём
-сервере. Дождитесь статуса подключения. Затем свяжите сервер или его группу
-с нужным тарифом. Сервер, не включённый в тариф пользователя, не появится у него
-только потому, что он добавлен в панель.
+Add a node in the servers section and run its enrollment command on your server.
+Wait for it to connect, then link the server or its group to the intended plan.
+Adding a server to the panel alone does not make it available to every user.
 
-Выбирайте протоколы, которые доступны вашему серверу и клиентам. Если сервер
-недоступен, сначала проверьте его состояние и связь с панелью. Смена тарифа
-или повторная выдача ключа не исправит выключенный сервер.
+Choose protocols supported by both the server and client. When a server is
+unavailable, check its health and connection to the panel first. Changing a user's
+plan or issuing another key will not fix an offline server.
 
-## Тарифы, пользователи и устройства
+## Plans, users and devices
 
-Тариф определяет срок доступа, доступные серверы, трафик и число устройств.
-Перед выдачей подписки проверьте эти значения. Условия бесплатного тарифа задаёт
-владелец сервиса; единый лимит трафика для всех установок не предполагается.
+A plan defines access duration, available servers, traffic allowance and device
+limits. Review these before issuing subscriptions. The service owner sets the
+free plan's allowance; there is no universal traffic quota for every installation.
 
-В карточке пользователя смотрите активную подписку, срок, устройства и обращения.
-Если достигнут лимит устройств, пользователь может отвязать ненужное устройство
-в приложении, когда его подключение поддерживает управление аккаунтом.
+A user's page shows their active subscription, expiry, devices and tickets.
+When all device slots are taken, a user with a connected panel account can remove
+an unused device in the app.
 
-Ссылка подключения даёт доступ к аккаунту или подписке. Передавайте её только
-владельцу аккаунта; для разбора ошибки обычно достаточно текста ошибки и номера
-версии приложения.
+Connection links give access to an account or subscription. Share them only with
+the account owner. For troubleshooting, the error text and app version are
+usually sufficient.
 
-### Ожидающая подписка — новое в 0.9.98
+### Pending subscriptions — new in 0.9.98
 
-Во Free активация пользователем ключа, промоподписки или ожидающей подписки требует
-одобрения администратора. Найдите ожидающую подписку в карточке пользователя
-и подтвердите её, когда готовы выдать доступ.
+In Free, user activation of keys, promotional subscriptions and pending
+subscriptions requires admin approval. Open the pending subscription on the
+user's page and approve it when you are ready to provide access.
 
-Дни ключей сохраняются на время ожидания. Если пользователь активировал несколько
-ключей одного тарифа, дни суммируются. При одобрении они добавляются к ещё
-действующей подписке того же тарифа; оплаченный остаток сохраняется. Если активного
-срока уже нет, предоставленный срок начинается с одобрения.
+Key days are preserved while waiting. Multiple keys for the same plan accumulate.
+On approval, their days extend an existing subscription to the same plan,
+preserving paid time. If no active time remains, the grant starts at approval.
 
-Если в выбранной группе нет свободного места, одобрение не состоится, а ожидающие
-дни останутся у пользователя. Освободите место или исправьте настройки группы,
-затем повторите действие. Активация другого тарифа заменяет текущий: учитывайте
-это перед подтверждением смены.
+If the selected group has no available capacity, approval fails and the pending
+days remain intact. Free capacity or correct the group settings, then try again.
+Activating a different plan replaces the current one; account for this before
+approving a switch.
 
-Бесплатный доступ и приветственные подарки, заранее настроенные владельцем,
-могут выдаваться автоматически и во Free.
+Free access and welcome gifts configured in advance by the owner may be granted
+automatically in Free as well.
 
-## Ключи подписки — новое в 0.9.98
+## Subscription keys — new in 0.9.98
 
-Ключи подходят для индивидуальной выдачи, промокампаний и продажи через
-маркетплейсы. Откройте **Sales → Promotions → Subscription keys**.
+Use keys for individual grants, promotions or marketplace sales. Open
+**Sales → Promotions → Subscription keys**.
 
-1. Выберите активный тариф и число дней.
-2. Укажите понятное название партии и количество: от 1 до 5 000.
-3. При необходимости задайте последний день активации. Дата считается в UTC.
-4. Создайте партию и скачайте нужный формат.
+1. Select an active plan and the number of days.
+2. Name the batch and choose a quantity from 1 to 5,000.
+3. Optionally set the last date on which keys may be redeemed. The date is in UTC.
+4. Create the batch and download the required format.
 
-| Файл | Что внутри | Когда использовать |
+| File | Contents | Typical use |
 | :--- | :--- | :--- |
-| TXT | Только неиспользованные действующие ключи, по одному в строке | Передача в систему выдачи маркетплейса. |
-| CSV | Все ключи партии, срок и состояние | Учёт выданных и оставшихся ключей. |
+| TXT | Valid, unused keys only, one per line | Import into a marketplace delivery system. |
+| CSV | All keys in the batch, duration and status | Track issued and remaining keys. |
 
-Каждый ключ можно погасить только один раз. Повторная отправка той же формы
-создания не должна создавать новую партию. Если ключи больше не нужны,
-**Revoke unused** отзывает оставшиеся неиспользованные ключи. Уже выданные
-подписки и история сохраняются.
+Each key can be redeemed once. Resubmitting the same creation form should return
+the same batch. **Revoke unused** invalidates keys that have not been redeemed;
+existing subscriptions and their history remain.
 
-Выдавайте покупателю только его ключ. Общий TXT/CSV открывает доступ ко всей
-неиспользованной партии, поэтому храните его как пароль.
+Give each customer only their own key. A full TXT/CSV export grants access to all
+unused keys in the batch, so protect it like a password.
 
-Ключ того же тарифа добавляет дни к действующей подписке. Во Free доступ ждёт
-одобрения; во Full активируется автоматически. Срок для активации ключа и число
-дней подписки — разные значения: первый ограничивает момент погашения ключа,
-второе определяет длительность доступа.
+A key for the same plan adds days to the active subscription. Free waits for
+approval; Full activates automatically. The redemption deadline and subscription
+duration are different: the former limits when a key may be used, while the latter
+sets how long access lasts.
 
-## Трафик и история — новое в 0.9.98
+## Traffic and history — new in 0.9.98
 
-Откройте **Overview → Traffic analytics**. Выберите 7, 30, 90, 180, 365 или 730 дней,
-либо задайте даты вручную в пределах 730 дней. Даты и дневные интервалы — в UTC.
-График показывает измеренный трафик по дням, таблицы — точные объёмы.
-Можно выбрать пользователя и устройство. Выгрузка CSV доступна сотруднику
-с правом управления аналитикой.
+Open **Overview → Traffic analytics**. Choose 7, 30, 90, 180, 365 or 730 days,
+or select custom dates within 730 days. Dates and daily intervals use UTC.
+The chart shows daily measured traffic, with exact amounts in the tables.
+Filter by user and device. CSV export requires permission to manage analytics.
 
-| Категория | Что означает |
+| Category | Meaning |
 | :--- | :--- |
-| Устройство / Device | Сервер измерил трафик отдельных реквизитов конкретного устройства. |
-| Общий / Shared | Трафик относится к подписке, но её реквизиты используются совместно. |
-| Не определён / Unknown | Измерение получено, но его нельзя надёжно связать с пользователем или устройством. |
+| Device | The server measured credentials assigned to a specific device. |
+| Shared | Traffic belongs to a subscription whose credentials are shared. |
+| Unknown | A measurement cannot reliably be matched to a user or device. |
 
-Не складывайте общий трафик с показаниями одного устройства как две оценки
-одного и того же устройства: категории показывают разное покрытие учёта.
-Старая общая подписка не превращается в историю отдельных устройств задним числом.
+Shared traffic is not a second estimate of an individual device's traffic.
+The categories describe different measurement coverage. An old shared
+subscription cannot be split into a device history retroactively.
 
-Точный учёт устройства требует обновлённого клиента со стабильным идентификатором
-установки и отдельных реквизитов. Они начинают использоваться после применения
-конфигурации обслуживающими серверами. Общие режимы AmneziaWG и Shadowsocks
-остаются в общей категории. Статистика не обещает учёт по каждому устройству
-на всех протоколах.
+Device attribution requires an updated client with a stable installation ID and
+separate credentials. Those credentials become active after the serving nodes
+apply their configuration. Shared AmneziaWG and Shadowsocks modes remain shared.
+The statistics do not promise individual device coverage for every protocol.
 
-Дневные измерения хранятся до **730 дней**. Новая история накапливается после
-обновления; ранее удалённые данные не восстанавливаются. Пустой период означает,
-что измерений за него нет. После перебоя связи отложенный трафик может появиться
-в дне получения отчёта. Если новых данных нет, проверьте состояние сервера.
+Daily measurements are retained for up to **730 days**. New history accumulates
+after upgrading; previously deleted data is not reconstructed. An empty period
+means there are no measurements for it. Following an outage, delayed traffic
+may be recorded on the day the report arrives. Check server health if new data
+is missing.
 
-Это статистика объёма трафика, а не список посещённых пользователем сайтов.
+These statistics measure traffic volume, not the websites a user visits.
 
-## Сообщения Telegram — обновлено в 0.9.98
+## Telegram messages — updated in 0.9.98
 
-В **Messaging → Templates** выберите событие и язык. Для приветствия доступны
-обычный шаблон и вариант для промокампании. Введите сообщение, выберите формат,
-при необходимости добавьте изображение, GIF и кнопки со ссылками.
+In **Messaging → Templates**, choose an event and language. Welcome messages have
+regular and promotion variants. Enter your message, choose its format and add
+an image, GIF or link buttons if needed.
 
-PNG, JPEG и GIF допускаются до **5 МБ** на файл. Кнопки можно объединять в строки.
-Предпросмотр показывает сообщение и пример имени получателя; внешний вид
-в разных версиях Telegram может немного отличаться.
+PNG, JPEG and GIF files are supported up to **5 MB** each. Buttons can be grouped
+into rows. The preview shows the message with a sample recipient name; rendering
+may vary slightly between Telegram versions.
 
-**Сохранение шаблона не отправляет сообщение пользователям.** Кнопка
-**Send test to me** отправляет тест только в Telegram текущего администратора,
-если его учётная запись связана с Telegram. Проверив тест, используйте
-**Messaging → Broadcasts** для отдельного запуска рассылки.
+**Saving a template does not send it to users.** **Send test to me** sends only to
+the current administrator's Telegram account, if linked. After checking a test,
+use **Messaging → Broadcasts** to launch a campaign separately.
 
-Неиспользуемые вложения старше 7 дней очищаются при следующей загрузке.
-Используемые шаблонами файлы сохраняются; включайте вложения в резервную копию.
+Unused attachments older than seven days are cleaned up on the next upload.
+Files referenced by templates are retained. Include attachments in your backups.
 
-## Обращения поддержки
+## Support tickets
 
-Пользователь Caramba Connect открывает **Профиль → Запросы в поддержку**, описывает
-проблему и получает ответ там же. В панели откройте раздел тикетов, выберите
-обращение и ответьте пользователю. При работе командой назначайте ответственного,
-чтобы два сотрудника не обрабатывали один вопрос независимо.
+Caramba Connect users open **Profile → Support requests**, describe their problem
+and receive replies there. Open the panel's tickets section, choose a ticket and
+reply. Assign a responsible staff member when working as a team so the same issue
+is not handled independently by two people.
 
-В **0.9.98** сохранение тикета не ждёт Telegram-уведомления. Обновлённый клиент
-может повторить неудачную отправку без создания второго обращения. Если пользователь
-ещё на старой версии, попросите его сначала проверить список обращений и обновиться.
+In **0.9.98**, saving a ticket does not wait for Telegram notification delivery.
+The updated client can retry a failed submission without creating another ticket.
+For users on older clients, ask them to check their ticket list and update first.
 
-Сотруднику для переписки достаточно **Support tickets → Manage**. Серверные ключи
-и платёжные настройки для этой задачи ему не нужны.
+**Support tickets → Manage** is sufficient for replying. Support staff do not
+need server credentials or payment settings for this task.
 
-## Команда и права — новое в 0.9.98
+## Team permissions — new in 0.9.98
 
-Под владельцем откройте **System → Panel accounts**. Создайте сотруднику имя
-и пароль, затем выберите доступ к каждому разделу.
+As the owner, open **System → Panel accounts**. Create a staff username and
+password, then choose access for each section.
 
-| Право | Что может сотрудник |
+| Permission | Access |
 | :--- | :--- |
-| No access | Раздел недоступен. |
-| View | Смотрит разрешённые данные без изменения. |
-| Manage | Выполняет разрешённые действия в разделе. |
+| No access | The section is unavailable. |
+| View | Read permitted information without making changes. |
+| Manage | Perform the permitted actions in that section. |
 
-Выгрузки ключей и аналитики требуют соответствующего права управления.
-Права просмотра не открывают системные секреты. Управление владельцами и
-системными секретами остаётся у владельца панели.
+Key and analytics exports require the corresponding management permission.
+Read access does not reveal system secrets. Owner management and system secrets
+remain available only to the panel owner.
 
-Изменение прав или отключение сотрудника завершает его старые сеансы.
-Сотрудник меняет свой пароль через **My account** в верхней части панели.
-Начните с минимального нужного набора разделов и расширяйте его по обязанностям.
+Changing permissions or disabling an account invalidates its previous sessions.
+Staff change their own passwords through **My account** at the top of the panel.
+Start with only the sections each person needs and expand access with their role.
 
-## Free, Full и платежи — 0.9.98
+## Free, Full and payments — 0.9.98
 
-Free позволяет использовать официальную сборку без платы за лицензию:
-**3 VPN-сервера, 2 релэя отдельно и 100 пользователей**. Поддержка, сообщения,
-аналитика и сотрудники доступны. Встроенный приём платежей отключён.
+Free provides the official build without a license fee: **3 VPN servers,
+2 separate relays and 100 users**. Support, messages, analytics and staff accounts
+are available. Integrated payments are disabled.
 
-Full работает по отдельному разрешению и действующей лицензии. Для подключения
-напишите [@caramba_support](https://t.me/caramba_support); автоматическая продажа
-лицензий пока не открыта. [Условия редакций](../LICENSE.md).
+Full requires separate authorization and a valid license. Contact
+[@caramba_support](https://t.me/caramba_support); automated license sales are not
+open. [Edition terms](../LICENSE.md).
 
-Истечение лицензии не удаляет пользователей, серверы и данные. Ограничения
-применяются к новым действиям и приёму новых платежей. Перед изменением редакции
-проверьте работающий платёжный сценарий и текущие ограничения.
+License expiry does not delete users, servers or data. Limits apply to new
+operations and new payments. Before changing editions, check your payment flow
+and the resulting limits.
 
-## Регулярный уход
+## Regular maintenance
 
-Проверяйте состояние серверов, обращения пользователей и свободное место.
-Храните отдельную резервную копию базы, настроек и вложений. Перед обновлением
-читайте [порядок обновления](UPGRADING.md) и примечания конкретного выпуска.
+Check server health, user tickets and free disk space. Keep a separate backup
+of the database, settings and attachments. Before upgrading, read the
+[upgrade guide](UPGRADING.md) and the specific release notes.
 
-Если нужна помощь, отправьте [@caramba_support](https://t.me/caramba_support)
-номер версии и текст ошибки. Пароли, токены, полные ссылки подключения и выгрузки
-ключей в сообщение не включайте.
+For help, send [@caramba_support](https://t.me/caramba_support) the version and error
+text. Do not include passwords, tokens, complete connection links or key exports.

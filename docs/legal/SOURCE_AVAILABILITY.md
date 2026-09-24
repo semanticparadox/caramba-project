@@ -1,21 +1,34 @@
-# Исходники компонентов / Component source
+# Component source
 
-Официальные загрузки и соответствующие исходники размещаются во вложениях [выпусков Caramba](https://github.com/semanticparadox/caramba-project/releases). Дерево разработки панели не требуется для скачивания этих файлов.
+**English** · [Русский](SOURCE_AVAILABILITY.ru.md)
 
-| Архив рядом с бинарниками | Содержимое |
+Official downloads and their corresponding source are attached to
+[Caramba releases](https://github.com/semanticparadox/caramba-project/releases).
+Access to the panel's development tree is not required to download these files.
+
+| Archive alongside the binaries | Contents |
 | --- | --- |
-| `Caramba-Connect-<platform>-sources.tar.gz` | Клиент, caramba-core, изменённый Mihomo, патчи, зависимости, лицензии и инструкции сборки этого выпуска |
-| `sing-box-sources.tar.gz` | Закреплённый sing-box, зависимости и параметры сборки |
-| `amneziawg-go-sources.tar.gz` | Закреплённый AmneziaWG, зависимости и параметры сборки |
-| `caramba-rust-third-party-sources.tar.gz` | Rust-зависимости и уведомления; без оригинального кода закрытой панели |
-| `*-SOURCE_SHA256SUMS` / `SOURCE_SHA256SUMS` | Контрольные суммы архивов |
+| `Caramba-Connect-<platform>-sources.tar.gz` | The client, caramba-core, modified Mihomo, patches, dependencies, licenses and build instructions for that release |
+| `sing-box-sources.tar.gz` | Pinned sing-box, dependencies and build settings |
+| `amneziawg-go-sources.tar.gz` | Pinned AmneziaWG, dependencies and build settings |
+| `caramba-rust-third-party-sources.tar.gz` | Rust dependencies and notices; excludes original proprietary panel code |
+| `*-SOURCE_SHA256SUMS` / `SOURCE_SHA256SUMS` | Archive checksums |
 
-Выбирайте исходники того же выпуска, что и бинарник. Внутри находятся сведения о версии и контрольные суммы файлов. Отдельные лицензии продолжают разрешать использование, изменение и распространение соответствующих компонентов; ограничения оригинальной панели их не заменяют.
+Choose source from the same release as your binary. The archives contain version
+information and file checksums. Each component's license continues to permit its
+applicable use, modification and redistribution; restrictions on the original
+panel do not replace those licenses.
 
-Исходники ранее опубликованных компонентов доступны в [архивном выпуске](https://github.com/semanticparadox/caramba-project/releases/tag/sources-legacy-2026-09-16) с указанием исходных версий и контрольных сумм. Он содержит только исходники и уведомления, без приложений для установки. Перенос или удаление старого бинарного релиза не отзывает уже предоставленные права. Если нужного файла нет, сообщите версию и платформу в [@caramba_support](https://t.me/caramba_support). Поддержка дополняет публичную загрузку исходников, а не заменяет её.
+Source for previously published components is available in the
+[historical source release](https://github.com/semanticparadox/caramba-project/releases/tag/sources-legacy-2026-09-16),
+with original versions and checksums. That release contains source and notices,
+not installable apps. Moving or removing an older binary release does not revoke
+rights already granted. If a file is missing, send its version and platform to
+[@caramba_support](https://t.me/caramba_support). Support supplements public source
+downloads; it does not replace them.
 
-Инструменты сборки и платформенные SDK могут требоваться отдельно. Архивы не содержат приватных ключей подписи. Уведомления об авторских правах в компонентах и исходниках сохраняются.
+Build tools and platform SDKs may be required separately. Archives do not contain
+private signing keys. Copyright notices in components and source are retained.
 
-English: corresponding source is supplied as release attachments, under each component’s own license, alongside matching binaries. The public documentation repository need not contain the development tree. Earlier grants remain valid.
-
-Основания: [GPLv3, раздел 6](https://www.gnu.org/licenses/gpl-3.0.html#section6), [GitHub: лицензирование](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository).
+References: [GPLv3, section 6](https://www.gnu.org/licenses/gpl-3.0.html#section6),
+[GitHub: licensing a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository).

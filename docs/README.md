@@ -1,21 +1,23 @@
-# Документация Caramba Project
+# Caramba Project documentation
 
-[← На главную](../README.md) · **RU** | [ENG](README.en.md) · [Поддержка](https://t.me/caramba_support)
+English is the default language. Russian translations are linked from each guide
+and collected in the [Russian documentation index](README.ru.md).
 
-| Задача | Руководство |
+[← Home](../README.md) · **English** | [Русский](README.ru.md) · [Support](https://t.me/caramba_support)
+
+| Task | Guide |
 | :--- | :--- |
-| Подключиться к VPN | [Caramba Connect: установка, подписка и помощь](CONNECT.md) |
-| Запустить свою панель | [Установка и первый запуск](INSTALL.md) |
-| Управлять сервисом | [Полное руководство панели](PANEL.md) |
-| Активировать или продлить Full | [Активация лицензии](LICENSING.md) |
-| Обновить панель или приложение | [Обновление и резервная копия](UPGRADING.md) |
-| Что нового | [Выпуск 0.9.98](releases/0.9.98.md) |
-| Найти условия использования | [Лицензии](../LICENSE.md) |
-| Скачать соответствующие исходники | [Исходники и сторонние компоненты](legal/SOURCE_AVAILABILITY.md) |
+| Connect to a VPN | [Caramba Connect: installation, subscription and help](CONNECT.md) |
+| Set up your panel | [Installation and first run](INSTALL.md) |
+| Operate your service | [Complete panel guide](PANEL.md) |
+| Activate or renew Full | [License activation](LICENSING.md) |
+| Update the panel or app | [Upgrades and backups](UPGRADING.md) |
+| What's new | [Release 0.9.98](releases/0.9.98.md) |
+| Find terms of use | [Licenses](../LICENSE.md) |
+| Download corresponding source | [Source and third-party components](legal/SOURCE_AVAILABILITY.md) |
 
-Доступен выпуск **0.9.98**. Новые возможности требуют обновления установки.
-Все компоненты выпуска, включая Connect, используют версию **0.9.98**.
-Файлы и примечания доступны в
-[Releases](https://github.com/semanticparadox/caramba-project/releases/latest).
+Release **0.9.98** is available. New features require updating your installation.
+All components, including Connect, use version **0.9.98**. Files and notes are
+available in [Releases](https://github.com/semanticparadox/caramba-project/releases/latest).
 
-Вопросы по установке и Full: [@caramba_support](https://t.me/caramba_support).
+For installation or Full, contact [@caramba_support](https://t.me/caramba_support).

@@ -1,15 +1,18 @@
 # Caramba Project documentation
 
-[← Home](../README.en.md) · [RU](README.md) | **ENG** · [Support](https://t.me/caramba_support)
+English is the default language. Russian translations are linked from each guide
+and collected in the [Russian documentation index](README.ru.md).
+
+[← Home](../README.md) · **English** | [Русский](README.ru.md) · [Support](https://t.me/caramba_support)
 
 | Task | Guide |
 | :--- | :--- |
-| Connect to a VPN | [Caramba Connect: installation, subscription and help](CONNECT.en.md) |
-| Set up your panel | [Installation and first run](INSTALL.en.md) |
-| Operate your service | [Complete panel guide](PANEL.en.md) |
-| Activate or renew Full | [License activation](LICENSING.en.md) |
-| Update the panel or app | [Upgrades and backups](UPGRADING.en.md) |
-| What's new | [Release 0.9.98](releases/0.9.98.en.md) |
+| Connect to a VPN | [Caramba Connect: installation, subscription and help](CONNECT.md) |
+| Set up your panel | [Installation and first run](INSTALL.md) |
+| Operate your service | [Complete panel guide](PANEL.md) |
+| Activate or renew Full | [License activation](LICENSING.md) |
+| Update the panel or app | [Upgrades and backups](UPGRADING.md) |
+| What's new | [Release 0.9.98](releases/0.9.98.md) |
 | Find terms of use | [Licenses](../LICENSE.md) |
 | Download corresponding source | [Source and third-party components](legal/SOURCE_AVAILABILITY.md) |
 

@@ -1,62 +1,60 @@
-# Установка панели
+# Install the panel
 
-[← Документация](README.md) · **RU** | [ENG](INSTALL.en.md) · [Обновить установленную панель](UPGRADING.md)
+[← Documentation](README.md) · **English** | [Русский](INSTALL.ru.md) · [Upgrade an existing panel](UPGRADING.md)
 
-Это инструкция для владельца сервиса. Если вы хотите только подключиться к VPN,
-перейдите к [Caramba Connect](CONNECT.md).
+This guide is for service owners. If you only want to connect to a VPN, use the
+[Caramba Connect guide](CONNECT.md).
 
-Для установки с публичного адреса используйте выпуск **0.9.98 или новее**.
-Старые серверные файлы 0.9.97 для этого пути не подходят.
+Installation from the public address requires release **0.9.98 or later**.
+Older 0.9.97 server files do not support this installation path.
 
-## Подготовьте сервер
+## Prepare your server
 
-Нужен Linux-сервер с правами администратора, доступом в интернет и доменом,
-направленным на его IP-адрес. Рекомендуется отдельный сервер с Ubuntu 22.04 или
-новее. Доступность выбранной системы и архитектуры проверьте в
-[примечаниях к выпуску](https://github.com/semanticparadox/caramba-project/releases/latest).
+You need a Linux server with administrator access, internet access and a domain
+pointing to its IP address. A dedicated server running Ubuntu 22.04 or newer is
+recommended. Check the [release notes](https://github.com/semanticparadox/caramba-project/releases/latest)
+for supported systems and architectures.
 
-Подготовьте доступ к DNS домена. Если будете использовать Telegram, создайте бота
-через BotFather и сохраните его токен для мастера установки. Токен даёт управление
-ботом: не публикуйте его и не вставляйте в обращения поддержки.
+Have access to your domain's DNS settings. If you plan to use Telegram, create
+a bot through BotFather and keep its token ready for setup. The token controls
+your bot; do not publish it or include it in support requests.
 
-## Запустите установщик
+## Run the installer
 
-Подключитесь к серверу по SSH.
-Скачайте официальный установщик и запустите его:
+Connect to the server over SSH, download the official installer and run it:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/semanticparadox/caramba-project/main/install.sh -o /tmp/caramba-install.sh
 sudo bash /tmp/caramba-install.sh
 ```
 
-Установщик загружает готовые компоненты из публичного выпуска. Следуйте его
-подсказкам: выберите роль панели, укажите домен и настройте доступ администратора.
-Сохраните выданный адрес входа и пароль в своём менеджере паролей.
+The installer downloads ready-to-use components from the public release. Follow
+its prompts to choose the panel role, enter your domain and configure the admin
+account. Save the login address and password in your password manager.
 
-При установке на действующий сервер сначала сделайте резервную копию его данных.
-Обновление существующей Caramba выполняется по [отдельной инструкции](UPGRADING.md).
+Back up existing data before installing on a server already in use. For an
+existing Caramba installation, follow the [upgrade guide](UPGRADING.md).
 
-## Первый запуск
+## First run
 
-1. Откройте адрес панели, который показал установщик, и войдите под владельцем.
-2. Проверьте, что адрес открывается по HTTPS и состояние сервисов не показывает ошибку.
-3. Добавьте VPN-сервер в разделе серверов. Выполните выданную панелью команду на
-   этом сервере и дождитесь его появления в сети. Команда регистрации содержит
-   секрет: используйте её только на своём сервере.
-4. Создайте тариф: срок доступа, лимиты трафика и число устройств. Свяжите его
-   с нужными серверами или группой серверов.
-5. Выдайте пробную подписку своему тестовому пользователю и проверьте подключение
-   в Caramba Connect.
-6. Настройте бота, сообщения и канал поддержки, если они нужны вашему сервису.
+1. Open the panel address shown by the installer and sign in as the owner.
+2. Confirm that HTTPS works and the service status shows no errors.
+3. Add a VPN server in the servers section. Run the enrollment command supplied
+   by the panel on that server and wait for it to come online. The command contains
+   a secret; use it only on a server you control.
+4. Create a plan with access duration, traffic allowance and device limits.
+   Link it to the intended servers or server group.
+5. Issue a subscription to your own test user and check it in Caramba Connect.
+6. Set up your bot, messages and support contact if your service needs them.
 
-Панель и VPN-сервер выполняют разные задачи: успешный вход в панель ещё не означает,
-что сервер подключения готов. Перед выдачей доступа пользователям проверьте оба.
+The panel and VPN server have different roles: being able to sign in to the panel
+does not mean a connection server is ready. Check both before inviting users.
 
-## Выберите редакцию
+## Choose an edition
 
-В выпуске **0.9.98** Free предусматривает до 3 VPN-серверов,
-2 отдельных релэев и 100 пользователей, без встроенного приёма платежей.
-Для Full и вопросов о размещении напишите [@caramba_support](https://t.me/caramba_support).
-[Условия использования](../LICENSE.md).
+In release **0.9.98**, Free allows up to 3 VPN servers, 2 separate
+relays and 100 users, without integrated payments. For Full or setup questions,
+contact [@caramba_support](https://t.me/caramba_support).
+[Terms of use](../LICENSE.md).
 
-Дальше: [руководство панели](PANEL.md) · [резервное копирование и обновление](UPGRADING.md).
+Next: [panel guide](PANEL.md) · [backups and upgrades](UPGRADING.md).

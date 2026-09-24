@@ -1,99 +1,98 @@
-# Caramba Connect: подключение и помощь
+# Caramba Connect: connect and troubleshoot
 
-[← Документация](README.md) · **RU** | [ENG](CONNECT.en.md) · [Скачать приложение](../README.md#скачать-caramba-connect)
+[← Documentation](README.md) · **English** | [Русский](CONNECT.ru.md) · [Download the app](../README.md#download-caramba-connect)
 
-Caramba Connect — приложение для подключения к вашему VPN-провайдеру.
-Caramba Connect **0.9.98** входит в выпуск Caramba Project **0.9.98**.
-Внутренний номер сборки — **112**. Доступные платформы и файлы перечислены ниже.
+Caramba Connect connects you to your VPN provider. **Caramba Connect 0.9.98**
+is part of Caramba Project **0.9.98**. Its internal build number is **112**.
+Available platforms and files are listed below.
 
-## Установите приложение
+## Install the app
 
-Скачивайте файлы из [официального выпуска](https://github.com/semanticparadox/caramba-project/releases/latest).
-Нужная сборка и ограничения указаны рядом с ней.
+Download from the [official release](https://github.com/semanticparadox/caramba-project/releases/latest).
+Check its notes for the appropriate build and limitations.
 
-| Система | Установка |
+| System | Installation |
 | :--- | :--- |
-| Windows 64-bit | Откройте `Caramba-Connect-Setup-x64.exe` и следуйте мастеру. Portable ZIP распакуйте целиком: приложение использует файлы рядом с EXE. |
-| macOS на Apple Silicon | Откройте DMG и перенесите приложение в «Программы». Сборка предназначена для чипов Apple M-серии. |
-| Android | Обычно нужен ARM64 APK; ARMv7 предназначен для более старых 32-битных устройств. Откройте APK и подтвердите установку из выбранного источника. |
-| Linux 64-bit | Распакуйте архив и выполните `install.sh` из него. Скрипт настраивает интеграцию приложения и необходимые права. |
-| iPhone / iPad | Публичной сборки Caramba Connect нет. Спросите своего провайдера о совместимом приложении и ссылке подписки. |
+| Windows 64-bit | Open `Caramba-Connect-Setup-x64.exe` and follow the installer. Extract the entire portable ZIP if using it; the app needs the files beside its EXE. |
+| macOS on Apple Silicon | Open the DMG and move the app to Applications. This build is for Apple M-series chips. |
+| Android | Most devices use ARM64; ARMv7 is for older 32-bit devices. Open the APK and allow installation from your chosen download source. |
+| Linux 64-bit | Extract the archive and run the included `install.sh`, which sets up app integration and required permissions. |
+| iPhone / iPad | There is no public Caramba Connect build. Ask your provider for a compatible app and subscription link. |
 
-Приложение macOS имеет техническую подпись ad hoc, без сертификата Developer ID.
-DMG не подписан и не нотарифицирован Apple; macOS может заблокировать обычное
-открытие загруженного файла. Это бета-сборка для Apple Silicon.
+The macOS app uses an ad-hoc signature without a Developer ID certificate.
+The DMG is unsigned and has not been notarized by Apple; macOS may block normal
+opening of the downloaded file. This is an Apple Silicon beta build.
 
-Подпись и требования конкретной сборки приведены в примечаниях к выпуску. Если
-система сообщает о повреждённом или неподходящем файле, проверьте платформу,
-источник загрузки и целостность файла перед повторной установкой.
+The release notes describe signing and requirements. If your system reports a
+damaged or incompatible file, check the platform, download source and file
+integrity before trying again.
 
-## Добавьте подключение
+## Add a connection
 
-1. Получите ссылку у своего провайдера. В Telegram-боте это обычно кнопка
-   **«Подключить Caramba Connect»** или команда `/link`.
-2. Нажмите ссылку. Если приложение не открылось, скопируйте её и откройте
-   **«Подключения» → «Добавить подключение» → «Вставить»**.
-3. Проверьте имя оператора на экране подтверждения и подтвердите подключение.
-4. Вернитесь на главный экран и нажмите кнопку подключения.
-5. На Android при первом подключении подтвердите системный запрос VPN.
+1. Get a connection link from your provider. In its Telegram bot, look for
+   **Connect Caramba Connect** or the `/link` command.
+2. Open the link. If it does not open the app, copy it and choose
+   **Connections → Add connection → Paste** in the app.
+3. Check the operator name on the confirmation screen and confirm the connection.
+4. Return to the home screen and press Connect.
+5. On Android, approve the system VPN request when connecting for the first time.
 
-Ссылка-приглашение может быть одноразовой и иметь ограниченный срок. Если она
-истекла, получите новую у провайдера. Не пересылайте её другим людям.
+An invitation can be single-use and time-limited. Get a fresh link if it has
+expired. Do not forward it to anyone else.
 
-Через «Добавить подключение» также можно импортировать поддерживаемую обычную
-подписку или конфигурацию. Управление аккаунтом, тарифами и устройствами появляется
-при подключении аккаунта панели и зависит от возможностей провайдера.
+Add connection also accepts supported standard subscriptions and configuration
+files. Account, plan and device management requires a linked panel account and
+depends on your provider's capabilities.
 
-## Как направляется трафик
+## How traffic is routed
 
-На Windows и Linux по умолчанию используется **системный TUN**. Ранее выбранный
-режим сохраняется. Windows запрашивает права администратора; на Linux запустите
-`install.sh` из архива — он запросит необходимые права и настроит доступ к TUN.
-Если TUN не запускается из-за прав, исправьте установку или вручную выберите
-**Локальный прокси** в **Настройки → Сеть и ядро → Захват трафика**.
+Windows and Linux default to **system TUN**. A previously selected mode is
+retained. Windows requests administrator permission; on Linux, run the included
+`install.sh` — it requests the required permissions and configures TUN access.
+If permissions prevent TUN from starting, fix the installation or manually choose
+**Local proxy** under **Settings → Network and core → Traffic capture**.
 
-На macOS используйте **локальный прокси**: системный TUN в текущей сборке
-не поддерживается. Адрес прокси указан в приложении, обычно `127.0.0.1:7890`.
-В режиме прокси укажите этот адрес в настройках браузера или другого приложения.
-Статус «подключено» на Mac сам по себе не означает, что весь трафик устройства
-проходит через VPN.
+On macOS, use the **local proxy**: system TUN is unsupported in the current
+build. The proxy address is displayed in the app, usually `127.0.0.1:7890`.
+In proxy mode, configure your browser or other app with that address. A connected
+status on a Mac does not mean all device traffic is routed through the VPN.
 
-В разделе правил трафика можно выбрать доступный режим маршрутизации и исключения.
-После изменения настроек переподключитесь, если приложение просит об этом.
+Use traffic rules to choose an available routing mode and exceptions. Reconnect
+after a settings change if prompted.
 
-## Серверы, профиль и поддержка
+## Servers, profile and support
 
-В разделе серверов выберите доступный узел или используйте **«Подобрать лучший
-узел»**. Если оператор предоставляет релэи, можно выбрать точку входа.
-Тип подключения должен поддерживаться и узлом, и вашей сетью.
+Choose an available server or use **Find best node**. If your provider offers
+relays, you can choose an entry point. The connection type needs to work with
+both your server and network.
 
-В профиле подключённого аккаунта доступны подписка, устройства и обращения
-поддержки. Названия и доступные действия зависят от провайдера и версии панели.
-Срок подписки и число устройств определяет ваш тариф.
+A linked account's profile provides subscriptions, devices and support requests.
+Labels and available actions depend on the provider and panel version. Your plan
+determines access duration and device limits.
 
-На компьютере приложение может оставаться в трее или строке меню после закрытия
-окна. Параметры запуска, закрытия окна и автозапуска находятся в настройках
-приложения. Для полного выхода используйте команду завершения в его меню.
+On desktop, the app may remain in the tray or menu bar after its window closes.
+Startup and close behavior are in the app settings. Use its Quit action when
+you want to close the app completely.
 
-## Если не подключается
+## If it does not connect
 
-| Что происходит | Что проверить |
+| Symptom | What to check |
 | :--- | :--- |
-| Ссылка не открывает приложение | Вставьте её вручную. Portable-версия Windows не регистрирует ссылки автоматически. |
-| Приглашение истекло | Получите новую ссылку у провайдера. |
-| Сервер не отвечает | Проверьте интернет без VPN, затем попробуйте другой доступный сервер или тип подключения. |
-| Подключено, но сайты не открываются | Проверьте режим прокси/TUN, настройки браузера и правила трафика. |
-| Все слоты устройств заняты | Удалите ненужное устройство из аккаунта или уточните лимит тарифа у провайдера. |
-| Подписка ожидает одобрения | Дождитесь подтверждения провайдером. Повторная установка приложения это не ускоряет. |
-| Не отправляется обращение | Проверьте сеть и список уже созданных обращений, затем повторите отправку. |
+| A link does not open the app | Paste it manually. The Windows portable app does not register links automatically. |
+| An invitation expired | Request a fresh link from the provider. |
+| A server does not respond | Check internet access without the VPN, then try another available server or connection type. |
+| Connected, but sites do not open | Check proxy/TUN mode, browser settings and traffic rules. |
+| All device slots are taken | Remove an unused device or ask your provider about the plan limit. |
+| A subscription is awaiting approval | Wait for your provider's approval. Reinstalling the app will not speed it up. |
+| A support request fails to send | Check the network and your existing ticket list, then retry. |
 
-Для вопроса о подписке используйте поддержку своего провайдера. Для проблемы
-с самим приложением можно написать [@caramba_support](https://t.me/caramba_support).
-Укажите систему, версию приложения и текст ошибки. Не прикладывайте пароли,
-приглашения, ключи подписки или личные платёжные данные.
+Contact your provider for subscription questions. For a problem with the app
+itself, contact [@caramba_support](https://t.me/caramba_support). Include your
+system, app version and error text. Do not include passwords, invitations,
+subscription keys or personal payment details.
 
-## Файлы проверки и исходники
+## Checksums and source
 
-Контрольные суммы приложений указаны в файлах `Caramba-Connect-<platform>.json`
-того же выпуска. Архивы соответствующих исходников и их контрольные суммы
-прикреплены рядом со сборками. [Как найти нужный архив](legal/SOURCE_AVAILABILITY.md).
+App checksums are recorded in the release's `Caramba-Connect-<platform>.json`
+files. Matching source archives and their checksums are attached alongside
+the builds. [Find the right source archive](legal/SOURCE_AVAILABILITY.md).

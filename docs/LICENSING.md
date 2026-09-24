@@ -1,50 +1,49 @@
-# Активация Caramba Full
+# Activate Caramba Full
 
-**RU** | [ENG](LICENSING.en.md)
+**English** | [Русский](LICENSING.ru.md)
 
-Free можно установить на собственный сервер без платы за лицензию. Для Full
-напишите [@caramba_support](https://t.me/caramba_support): согласуйте срок и
-число установок, затем получите файл активации для своей панели.
-Автоматической покупки внутри приложения пока нет.
+Free can be installed on your own server with no license fee. For Full, contact
+[@caramba_support](https://t.me/caramba_support), agree on the term and number
+of installations, and receive an activation file for your panel.
+In-app license purchasing is not available yet.
 
-## Что получает владелец панели
+## What the panel owner receives
 
-Full включает встроенные платежи, настройку брендинга и автоматическую выдачу
-промоподписок. Стандартная лицензия разрешает до 1000 серверов и не ограничивает
-число пользователей. Точные срок и лимиты относятся к выданной лицензии.
-Это лицензия панели; подписка на VPN для конечного пользователя приобретается
-отдельно у выбранного провайдера.
+Full enables integrated payments, custom branding and automatic promotional
+subscription activation. The standard license allows up to 1000 servers and
+unlimited users. The issued license determines the actual term and limits.
+This licenses the panel; an end user's VPN subscription is obtained separately
+from their chosen provider.
 
-## Как активировать
+## Activation
 
-1. Передайте поддержке домен и идентификатор установки панели. Идентификатор
-   хранится в настройке `CARAMBA_INSTANCE_ID`; не меняйте его при обновлениях.
-   Если у старой установки его нет, согласуйте новый при выдаче лицензии.
-2. Получите личный файл с четырьмя настройками: `CARAMBA_LICENSE_KEY`,
-   `CARAMBA_INSTANCE_ID`, `CARAMBA_LICENSE_SERVER_URL`, `CARAMBA_LICENSE_PUBKEY`.
-3. Администратор сервера добавляет или заменяет эти четыре значения в
-   существующем `/opt/caramba/.env`, сохраняя остальные настройки. Не заменяйте
-   весь `.env` полученным файлом. Доступ к файлу должен быть только у
-   администратора сервиса; для стандартной установки — права `0600`.
-4. Перезапустите службу панели и проверьте редакцию в общих настройках.
-   В версии 0.9.98 подпись **Pro** означает **Full**. Отдельной формы ввода
-   ключа в браузере в этой версии нет.
+1. Send support your panel domain and installation identifier. The identifier
+   is stored in `CARAMBA_INSTANCE_ID`; preserve it during upgrades. If an older
+   installation has no identifier, agree on a new one when requesting a license.
+2. Receive a private file containing four settings: `CARAMBA_LICENSE_KEY`,
+   `CARAMBA_INSTANCE_ID`, `CARAMBA_LICENSE_SERVER_URL` and `CARAMBA_LICENSE_PUBKEY`.
+3. Your server administrator adds or replaces those four values in the existing
+   `/opt/caramba/.env`, preserving all other settings. Do not replace the whole
+   `.env` with the activation file. Restrict access to the service administrator;
+   standard installations use file permissions `0600`.
+4. Restart the panel service and check its edition in General settings.
+   In version 0.9.98, **Pro** means **Full**. This version has no browser form
+   for entering a license key.
 
-Файл активации содержит секретный ключ вашей лицензии. Не размещайте его в
-репозитории, открытом чате или скриншоте. Закрытый ключ, которым владелец
-Caramba подписывает лицензии, покупателям не передаётся.
+The activation file contains your secret license key. Do not publish it in a
+repository, public chat or screenshot. The private signing key used by the
+Caramba owner is never supplied to customers.
 
-## Продление и перенос
+## Renewal and moving servers
 
-Продление и перенос на другой сервер оформляются через
-[@caramba_support](https://t.me/caramba_support). Не копируйте одну лицензию на
-дополнительные установки без согласованного количества мест. Идентификатор
-установки и ключ нужно сохранять при обычном обновлении панели.
+Contact [@caramba_support](https://t.me/caramba_support) to renew or move a license.
+Do not copy a license to additional installations beyond its agreed seat count.
+Preserve the installation identifier and key during ordinary panel upgrades.
 
-Проверка выполняется при запуске и затем примерно раз в 12–24 часа. При
-недоступности сервера активации ранее проверенная лицензия действует до
-14 дней с последней успешной проверки, но не дольше своего срока. После окончания
-действия применяются ограничения Free; продлевайте лицензию заранее.
+The panel checks activation at startup and approximately every 12–24 hours.
+If the activation server is unavailable, a previously verified license remains
+valid for up to 14 days after its last successful check, but never beyond its
+expiry date. Free restrictions apply when validity ends; renew in advance.
 
-[Сравнение Free и Full](../README.md#free-и-full) ·
-[Условия использования](../LICENSE.md) · [Обновление панели](UPGRADING.md)
+[Compare Free and Full](../README.md#free-and-full) ·
+[Terms of use](../LICENSE.md) · [Upgrade the panel](UPGRADING.md)

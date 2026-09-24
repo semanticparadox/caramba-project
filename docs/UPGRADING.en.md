@@ -1,6 +1,6 @@
 # Upgrades and backups
 
-[← Documentation](README.en.md) · [RU](UPGRADING.md) | **ENG**
+[← Documentation](README.md) · **English** | [Русский](UPGRADING.ru.md)
 
 Release **0.9.98** is available. The upgrade command installs the published release.
 
@@ -92,7 +92,7 @@ access. If you use Full, check your license and payment flow before reopening sa
 ## Update Caramba Connect
 
 Use the update offered in the app or download the new
-[build for your platform](../README.en.md#download-caramba-connect). Close the app
+[build for your platform](../README.md#download-caramba-connect). Close the app
 before replacing its files. On Android, install the APK for the same architecture
 over the existing app; avoid uninstalling it first unless necessary.
 

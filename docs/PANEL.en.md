@@ -1,6 +1,6 @@
 # Caramba panel: owner's guide
 
-[← Documentation](README.en.md) · [RU](PANEL.md) | **ENG** · [Install](INSTALL.en.md) · [Support](https://t.me/caramba_support)
+[← Documentation](README.md) · **English** | [Русский](PANEL.ru.md) · [Install](INSTALL.md) · [Support](https://t.me/caramba_support)
 
 The panel brings together your servers, users, subscriptions and support.
 Features introduced in the **0.9.98 release** are marked below. Their
@@ -8,7 +8,7 @@ menu entries may not be present in the previously published 0.9.97 release.
 
 ## Your first day
 
-After [installation](INSTALL.en.md), sign in as the owner. Add a VPN server, wait
+After [installation](INSTALL.md), sign in as the owner. Add a VPN server, wait
 for it to connect to the panel, create a plan and issue a subscription to your
 own test user. Test the app connection before inviting customers.
 
@@ -186,7 +186,7 @@ and the resulting limits.
 
 Check server health, user tickets and free disk space. Keep a separate backup
 of the database, settings and attachments. Before upgrading, read the
-[upgrade guide](UPGRADING.en.md) and the specific release notes.
+[upgrade guide](UPGRADING.md) and the specific release notes.
 
 For help, send [@caramba_support](https://t.me/caramba_support) the version and error
 text. Do not include passwords, tokens, complete connection links or key exports.

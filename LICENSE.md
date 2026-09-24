@@ -1,23 +1,50 @@
-# Лицензирование / Licensing
+# Licensing
 
-Caramba — название продукта. Авторские и иные права сохраняются у соответствующих правообладателей.
+**English** · [Русский](LICENSE.ru.md)
 
-## Панель
+Caramba is the product name. Copyright and other rights remain with their
+respective holders.
 
-Новые оригинальные материалы панели, впервые распространяемые с этими условиями, регулируются [Caramba Panel License 1.0](licenses/Caramba-Panel-LICENSE.txt). Официальную Free-сборку можно использовать на своих серверах без платы за лицензию: до 3 VPN-серверов, 2 релэев и 100 пользователей на экземпляр панели, без встроенного приёма платежей. Обычная настройка и редактирование сообщений разрешены. Изменение и распространение закрытой части требуют отдельного разрешения.
+## Panel
 
-Full предоставляется только по отдельному разрешению правообладателя. Обращения: [@caramba_support](https://t.me/caramba_support). Автоматические продажи лицензий не запущены; эти условия не создают обязанности покупать лицензию или платить роялти.
+New original panel material first distributed under these terms is governed by
+the [Caramba Panel License 1.0](licenses/Caramba-Panel-LICENSE.txt). The official
+Free build may be used on your own servers without a license fee: up to 3 VPN
+servers, 2 relays and 100 users per panel instance, without integrated payment
+collection. Ordinary configuration and message editing are permitted. Modifying
+or distributing the proprietary portion requires separate permission.
 
-## Отдельные компоненты и прежние версии
+Full is available only with separate authorization from the rights holder.
+Contact [@caramba_support](https://t.me/caramba_support). Automated license sales
+are not open; these terms create no obligation to purchase a license or pay
+royalties.
 
-Caramba Connect и caramba-core используют Mihomo под GPL-3.0; к ним не применяются ограничения модификации из лицензии панели. sing-box распространяется отдельно под GPL-3.0-or-later. Другие зависимости сохраняют собственные условия, включая сохранение уведомлений и предоставление исходников, когда это требуется. См. [сторонние компоненты](docs/legal/THIRD_PARTY.md).
+## Separate components and earlier versions
 
-Новые условия не отзывают ранее предоставленных прав. Прежнее обозначение ISC в корневом package.json нельзя отменить для уже полученных копий заменой этого файла. Применяются условия, сопровождавшие соответствующую копию. Закрытие репозитория не удаляет существующие копии и публичные форки.
+Caramba Connect and caramba-core use Mihomo under GPL-3.0; the panel license's
+modification restrictions do not apply to them. sing-box is distributed
+separately under GPL-3.0-or-later. Other dependencies retain their own terms,
+including notice retention and source provision where required. See
+[third-party components](docs/legal/THIRD_PARTY.md).
 
-## Исходники
+The new terms do not revoke rights already granted. The earlier ISC designation
+in the root package.json cannot be revoked for copies already received by
+replacing that file. The terms accompanying the relevant copy apply. Making the
+repository private does not remove existing copies or public forks.
 
-Публичная витрина: [caramba-project](https://github.com/semanticparadox/caramba-project). Соответствующие исходники открытых компонентов поставляются отдельными архивами при выпусках; дерево разработки панели может оставаться закрытым. Публичная документация не является лицензией на исходники панели. [Как получить исходники](docs/legal/SOURCE_AVAILABILITY.md).
+## Source
 
-No proprietary restriction here overrides third-party licenses, valid earlier grants, platform terms, or mandatory law. A no-fee grant does not waive attribution, source-distribution, or other applicable obligations.
+The public presentation repository is
+[caramba-project](https://github.com/semanticparadox/caramba-project).
+Corresponding source for open components is supplied in separate archives with
+releases; the panel's development tree may remain private. Public documentation
+does not grant a license to the panel source.
+[How to obtain source](docs/legal/SOURCE_AVAILABILITY.md).
 
-Оригинальные публичные тексты и изображения разрешено читать и использовать для установки и эксплуатации официального продукта. Иные права сохраняются, кроме отдельно предоставленных прав и условий GitHub.
+No proprietary restriction here overrides third-party licenses, valid earlier
+grants, platform terms, or mandatory law. A no-fee grant does not waive
+attribution, source-distribution, or other applicable obligations.
+
+Original public text and images may be read and used to install and operate the
+official product. Other rights are reserved, except for separately granted
+rights and GitHub's terms.
